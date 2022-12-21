@@ -60,7 +60,7 @@ class Board:
                     break # not in range 
 
 
-            #diagonal moves for when pawn takes opponet piece
+            #diagonal moves for when pawn takes opponent piece
             possible_move_row = row + piece.dir
             possible_move_cols = [col-1 , col+1]
             for possible_move_col in possible_move_cols:
@@ -236,7 +236,7 @@ class Board:
         self.squares[row_other][0] = Square(row_other, 0, Rook(colour))
         self.squares[row_other][7] = Square(row_other, 7, Rook(colour))
 
-        #self.squares[4][4] = Square(4, 4, Rook(colour)) this is for testing valid moves
+        #self.squares[4][4] = Square(4, 4, Rook(colour)) #this is for testing valid moves
 
         #adding the queen
         self.squares[row_other][3] = Square(row_other, 3, Queen(colour))

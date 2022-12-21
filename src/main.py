@@ -14,8 +14,6 @@ class Main:
         pygame.display.set_caption('Chess')
         self.game = Game()
 
-
-
     def mainloop(self):
         
         game = self.game    #game and screen used ined of self.game/ self.screen to make code easier to follow and understand 
