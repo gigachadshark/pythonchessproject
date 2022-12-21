@@ -60,4 +60,6 @@ class Queen(Piece):
 class King(Piece):
     
     def __init__(self,colour):
+        self.left_rook = None
+        self.right_rook = None
         super().__init__('king',colour,10000.0) #value show king is most important piece to AI
